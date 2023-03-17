@@ -27,7 +27,6 @@ const validateJWT = ( req, res = response, next ) => {
             msg:'JWT no válido'
         })
     }
-    console.log(token)
     next();
 }
 

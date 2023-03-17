@@ -20,6 +20,7 @@ app.use( express.static('public') );
 
 // rutas
 app.use('/api/auth', require('./routes/auth'));
+app.use('/api/events', require('./routes/events'));
 
 //escuchar peticiones
 app.listen( process.env.PORT, console.log(`Servidor corriendo en puerto ${process.env.PORT}`));
